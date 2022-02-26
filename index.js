@@ -1,7 +1,7 @@
 const named=['Birds','Cricket','Football','Hockey','Basketball','Baseball','News','Report'];
 const starts=document.getElementById("start");
 const text=document.getElementById("text1");
-const search=document.getElementById("search1");
+//const search=document.getElementById("search1");
 const right1=document.getElementById("correct");
 const wrong1=document.getElementById("itswrong1");
 const button=document.getElementById("button");
@@ -27,7 +27,7 @@ button.addEventListener("click",function start(){
         else if(starts.innerText!=text.value && counts<11){
             // wrong.style.display="flex";
             if(text.value!=""){
-             let wrong_text=` <div class="crickets" id="itswrong">${text.innerText}</div>`
+             let wrong_text=` <div class="crickets" id="itswrong">${starts.innerText}</div>`
              console.log(wrong_text);
              wrong1.innerHTML=wrong1.innerHTML+wrong_text;
              counts=counts+1;
@@ -41,19 +41,5 @@ button.addEventListener("click",function start(){
     }
    
     requestAnimationFrame(start);
-//}
 });
-// requestAnimationFrame(start);
-// function check(){
-//     if(starts.innerText==text.innerText){
-//         // right.style.display="flex";
-//          right.innerHTML=starts.innerText;
- 
-//      }
-//      else{
-//         // wrong.style.display="flex";
-//          wrong.innerHTML=starts.innerText;
- 
-//      }
-// }
 requestAnimationFrame(start);
