@@ -14,7 +14,6 @@ html,body{
     width: 100%;
     display: grid;
     grid-template-rows: 60px auto 60px;
-    
 }
 .header{
     background-color: aqua;
@@ -187,3 +186,53 @@ button{
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+.child{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    top: 10px;
+    left: 20px;
+    position: fixed;
+    cursor: pointer;
+    
+}
+.childs{
+    height: 180px;
+    width: 200px;
+    background-color:lightblue ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+   
+}
+.congrats{
+    height: 60px;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.wins{
+    height: 60px;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close{
+    height: 40px;
+    width: 30px;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45%;
+    margin-right: 5px;
+}
+
